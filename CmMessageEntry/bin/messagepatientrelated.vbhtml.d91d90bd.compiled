@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Views/MessageEntry/MessagePatientRelated.vbhtml" hash="33a722a5" filehash="ffffdc9109a85866" flags="110000" assembly="App_Web_rq1bqter" type="ASP._Page_Views_MessageEntry_MessagePatientRelated_vbhtml">
+    <filedeps>
+        <filedep name="/Views/MessageEntry/MessagePatientRelated.vbhtml" />
+    </filedeps>
+</preserve>

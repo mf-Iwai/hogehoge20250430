@@ -1,0 +1,275 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/****************************************************************
+    共通設定（PC・タブレット）
+    頭文字：mygroup_sort
+****************************************************************/
+
+div.sortMenu_container {
+    float:right;
+}
+
+/* ボタン: ソートアップ */
+div.sortMenu_container input.sortUp_btn {
+    width: 40px;
+    background-image: url('/WebCommon/Content/Images/icon_arrow_text48_mini.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 34px auto;
+    background-size: 34px auto;
+    background-position: 2px -72px;
+    position: relative;
+    top: -4px;
+}
+
+/* ボタン: ソートダウン */
+div.sortMenu_container input.sortDown_btn {
+    width: 40px;
+    background-image: url('/WebCommon/Content/Images/icon_arrow_text48_mini.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 34px auto;
+    background-size: 34px auto;
+    background-position: 2px -105px;
+    position: relative;
+    top: -4px;
+
+}
+
+/* ヘッダー */
+div#header_container {
+    background-color: #efeeee;
+    padding:10px;
+}
+
+div#main_container{
+    width:auto;
+    height:auto;
+}
+
+div#group_container > div {
+    height:100%;
+    overflow: auto;
+    /*Apple製品でスクロール対応するための記載*/
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* グループリスト */
+div#left_column ul.groupList {
+    width:100%;
+    height:auto;
+    padding-bottom:2px;
+}
+
+/* グループリスト: タイトル */
+div#group_container span#grTitle_label {
+    width:100%;
+    margin-top: 4px;
+    padding: 5px 5px;
+    display: block;
+    border:1px solid #898989;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* グループリスト: 要素 */
+div#left_column ul.groupList li {
+    width:100%;
+    padding: 5px 5px;
+    border-bottom:1px solid #898989;
+}
+
+
+
+
+div#group_container{
+    height:100%;
+}
+
+div#groupt_container > div{
+    height:100%;
+    overflow: auto;
+    /*Apple製品でスクロール対応するための記載*/
+    -webkit-overflow-scrolling: touch;
+}
+
+ul.groupList {
+    width: 100%;
+    height: auto;
+    padding-bottom:2px;
+}
+
+
+/* 選択リスト: 要素 */
+div#group_container ul.groupList li {
+    width:100%;
+    padding: 10px 5px;
+    border-bottom:1px solid #898989;
+}
+
+div#group_container ul.groupList li:hover {
+    background-color:#d0e6ff!important;
+}
+
+/* フッター */
+div#footer_container{
+    width:100%;
+    margin: 4px;
+}
+
+/* フッターメニュー*/
+div#footer_menu{
+    padding:4px;
+}
+
+/* フッターメニュー: ボタン */
+div#footer_menu input.BtnBtn {
+    width:100px;
+}
+
+/* ボタン:画面右 */
+div#footer_menu span.posRight{
+    float:right;
+    margin-right: 10px;
+}
+
+/*----------------------------------------------------
+    チェックボックス用スタイル
+----------------------------------------------------*/
+/* チェックボックス ＋ ラジオボタン 共通 */
+.Original {
+    position: relative;
+}
+.Original input[type=radio], .Original input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+}
+.Original input[type=radio] + label, .Original input[type="checkbox"] + label {
+    font-size: 16px;
+}
+
+/* チェックボックススタイル */
+.Original .checkbox  {
+    position: relative;
+    display: inline-block;
+    left: 0px;
+    padding: 0px 0px 0px 24px;
+    margin-right: 20px;
+    box-sizing: border-box;
+            transition: background-color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear;
+            border-radius: 2px;
+       -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+}
+.Original .checkbox:before {
+    width: 8px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    display: block;
+    margin-top: 0px;
+            transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    border-right: 3px solid #0b9bbf;
+    border-bottom: 3px solid #0b9bbf;
+    content: '';
+    opacity: 0;
+            transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1;
+}
+.Original .checkbox:after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-top: 0px;
+            transition: border-color 0.2s linear;
+    -webkit-transition: border-color 0.2s linear;
+    border: 2px solid #bbb;
+            border-radius: 2px;
+       -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: #FFF;
+    content: '';
+    z-index: 0;
+}
+.Original input[type="checkbox"]:checked:before {
+    width: 8px;
+    height: 3px;
+    position: absolute;
+    left: 2px;
+    top: 14px;
+    display: block;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    content: "";
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: right center;
+}
+input[type=checkbox]:checked + .checkbox:before {
+
+}
+
+/* ラジオボタンスタイル */
+.Original .radio {
+    position: relative;
+    left: 0px;
+    display: inline-block;
+    padding: 0px 0px 0px 25px;
+    margin-right: 18px;
+    box-sizing: border-box;
+    -webkit-transition: background-color 0.2s linear;
+            transition: background-color 0.2s linear;
+            border-radius: 2px;
+       -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+}
+.Original .radio:after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-top: 0px;
+    -webkit-transition: border-color 0.2s linear;
+            transition: border-color 0.2s linear;
+    border: 2px solid #bbb;
+            border-radius: 10px;
+       -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #FFF;
+    content: '';
+    z-index: 0;
+}
+.Original .radio:before {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    margin-top: 0px;
+    -webkit-transition: opacity 0.2s linear;
+            transition: opacity 0.2s linear;
+            border-radius: 50%;
+       -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #0b9bbf;
+    content: '';
+    opacity: 0;
+    z-index: 1;
+}
+
+.Original input[type=radio]:checked + .Original .radio:before {
+
+}

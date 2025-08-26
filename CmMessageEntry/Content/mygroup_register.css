@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/****************************************************************
+    MyGroupRegister
+****************************************************************/
+/* 全体 */
+div#myGroupRegister{
+    margin: 8px 4px 4px 4px;
+    height:100%;
+}
+
+/* メイン */
+div#main_container{
+    margin: 8px 4px 4px 4px;
+    height:100%;
+    overflow: auto;
+    /*Apple製品でスクロール対応するための記載*/
+    -webkit-overflow-scrolling: touch;
+}
+
+/* テキストエリア */
+div#textarea_container{
+    margin: 8px 4px 4px 4px;
+}
+
+/* フッター */
+div#footer_container{
+    margin: 20px 4px 4px 4px;
+}
+/* フッター:　ボタン */
+div.footer_menu input {
+    width: 100px;
+    margin-left: 10px;
+    float: right;
+}
+
+
+/* アイコン; インフォメーション */
+span.info_icon {
+display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_info.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 20x auto;
+    background-size: 20px auto;
+    background-position: left 0px;
+    padding-left: 28px;
+}

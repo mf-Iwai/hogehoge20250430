@@ -1,0 +1,231 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/****************************************************************
+    送信先選択
+    頭文字：mygroup_selection
+****************************************************************/
+
+div#main_container{
+    width:auto;
+    height:auto;
+}
+
+div#select_container{
+    height:100%;
+    overflow: auto;
+    /*Apple製品でスクロール対応するための記載*/
+    -webkit-overflow-scrolling: touch;
+}
+ul.selectList {
+    width: 100%;
+    height: auto;
+    padding-bottom:2px;
+}
+
+/* 選択リスト: タイトル */
+div#select_container span#selectList_label{
+    width: 100%;
+    padding: 5px 5px;
+    display: block;
+    border-bottom: 1px solid #898989;
+    background-color: #2d7dbe!important;
+}
+
+/* 選択リスト: 要素 */
+div#select_container ul.selectList li {
+    width:100%;
+    padding: 10px 5px;
+    border-bottom:1px solid #898989;
+}
+
+div#select_container ul.selectList li:hover {
+    background-color:#d0e6ff!important;
+}
+
+div#select_container ul.selectList li:first-child {
+    border-top:1px solid #898989;
+}
+
+div#select_container ul.selectList li.active {
+    background-color:#d0e6ff!important;
+}
+
+/* 選択リスト: 編集アイコン */
+ul.selectList span.edit_icon {
+    display: inline-block;
+    width: 30px;
+    background-image: url('/WebCommon/Content/Images/icon_pen_blue.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 25px auto;
+    background-size: 25px auto;
+    background-position: 5px center;
+    padding: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+/* フッター */
+div#footer_container{
+    width:100%;
+    margin: 4px;
+}
+
+/* フッターメニュー*/
+div#footer_menu{
+    padding:4px;
+}
+
+div#footer_menu div {
+    margin:8px 10px 4px 4px;
+}
+
+/* フッターメニュー: ボタン */
+div#footer_menu input.BtnBtn {
+    width:100px;
+}
+
+/* ボタン:画面右 */
+div#footer_menu span.posRight{
+    float:right;
+}
+
+/*----------------------------------------------------
+    チェックボックス用スタイル
+----------------------------------------------------*/
+/* チェックボックス ＋ ラジオボタン 共通 */
+.Original {
+    position: relative;
+}
+.Original input[type=radio], .Original input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+}
+.Original input[type=radio] + label, .Original input[type="checkbox"] + label {
+    font-size: 16px;
+}
+
+/* チェックボックススタイル */
+.Original .checkbox  {
+    position: relative;
+    display: inline-block;
+    left: 0px;
+    padding: 0px 0px 0px 24px;
+    margin-right: 20px;
+    box-sizing: border-box;
+            transition: background-color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear;
+            border-radius: 2px;
+       -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+}
+.Original .checkbox:before {
+    width: 8px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    display: block;
+    margin-top: 0px;
+            transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    border-right: 3px solid #0b9bbf;
+    border-bottom: 3px solid #0b9bbf;
+    content: '';
+    opacity: 0;
+            transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1;
+}
+.Original .checkbox:after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-top: 0px;
+            transition: border-color 0.2s linear;
+    -webkit-transition: border-color 0.2s linear;
+    border: 2px solid #bbb;
+            border-radius: 2px;
+       -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: #FFF;
+    content: '';
+    z-index: 0;
+}
+.Original input[type="checkbox"]:checked:before {
+    width: 8px;
+    height: 3px;
+    position: absolute;
+    left: 2px;
+    top: 14px;
+    display: block;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    content: "";
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: right center;
+}
+input[type=checkbox]:checked + .checkbox:before {
+
+}
+
+/* ラジオボタンスタイル */
+.Original .radio {
+    position: relative;
+    left: 0px;
+    display: inline-block;
+    padding: 0px 0px 0px 25px;
+    margin-right: 18px;
+    box-sizing: border-box;
+    -webkit-transition: background-color 0.2s linear;
+            transition: background-color 0.2s linear;
+            border-radius: 2px;
+       -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+}
+.Original .radio:after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    margin-top: 0px;
+    -webkit-transition: border-color 0.2s linear;
+            transition: border-color 0.2s linear;
+    border: 2px solid #bbb;
+            border-radius: 10px;
+       -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #FFF;
+    content: '';
+    z-index: 0;
+}
+.Original .radio:before {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    margin-top: 0px;
+    -webkit-transition: opacity 0.2s linear;
+            transition: opacity 0.2s linear;
+            border-radius: 50%;
+       -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #0b9bbf;
+    content: '';
+    opacity: 0;
+    z-index: 1;
+}
+
+.Original input[type=radio]:checked + .Original .radio:before {
+
+}

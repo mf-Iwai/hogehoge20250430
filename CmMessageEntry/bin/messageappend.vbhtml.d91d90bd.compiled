@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Views/MessageEntry/MessageAppend.vbhtml" hash="33a722a5" filehash="ffffdb59c9803a4d" flags="110000" assembly="App_Web_rq1bqter" type="ASP._Page_Views_MessageEntry_MessageAppend_vbhtml">
+    <filedeps>
+        <filedep name="/Views/MessageEntry/MessageAppend.vbhtml" />
+    </filedeps>
+</preserve>

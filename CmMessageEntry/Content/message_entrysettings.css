@@ -1,0 +1,272 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/****************************************************************
+    DatePicker（スタイルの上書き）
+****************************************************************/
+/* ヘッダー */
+div#ui-datepicker-div {
+	font-family: Roboto, "Droid Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif !important;
+}
+
+div#ui-datepicker-div div.ui-datepicker-title {
+	text-shadow: none;
+}
+
+div#ui-datepicker-div.ui-widget-content {
+	background: none;
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+
+div#ui-datepicker-div a.ui-state-hover {
+	font-weight: normal;
+	color: #212121;
+    /*[ 障害対応：カレンダーの日付をホバーするとコンソール画面にエラーメッセージが表示される]  髙橋 Add S
+     　 変更前 : background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;　　*/
+	background: #dadada url(/../../WebCommon/Content/Images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+    /*[ 障害対応：カレンダーの日付をホバーするとコンソール画面にエラーメッセージが表示される]  髙橋 Add E*/
+	border: 1px solid #999;
+}
+
+div#ui-datepicker-div .ui-datepicker-buttonpane.ui-widget-content {
+	border-top: 1px solid #aaa;
+}
+
+div#ui-datepicker-div input.ui-state-default {
+	color: #555;
+}
+
+/* ラジオボタン調整 */
+input[type="radio"] {
+    margin: 0;
+}
+
+label.radio {
+    height: 30px;
+    font-size: 100%;
+    line-height: 30px;
+    vertical-align: baseline;
+    padding: 0 0 0 27px;
+    margin: 0px 15px 0 0;
+    top: 0;
+    left: 0;
+}
+label.radio::before {
+    margin: 0;
+    top: 9px;
+    left: 5px;
+}
+label.radio::after {
+    margin: 0;
+    top: 4px;
+    left: 0;
+}
+
+/****************************************************************
+    共通設定（PC・タブレット）
+    頭文字：msg
+****************************************************************/
+#msg_container {
+    width: 100%;
+    padding: 3px 0 3px 3px;
+}
+
+#msg_footer {
+    height: 33px;
+    padding: 0 5px 5px;
+    clear: both;
+}
+
+/* フッターボタン */
+#msg_footer input {
+    min-width: 100px;
+}
+#msg_footer input#stamp_btn {
+    min-width: 130px;
+    background-image: url('/WebCommon/Content/Images/icon_stamp_W.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 18px auto;
+    background-size: 18px auto;
+    background-position: 8px 4px;
+    padding-left: 30px;
+}
+
+/* 要素内左右BOX */
+div.inr_left {
+    float: left;
+}
+div.inr_left::after {
+    content: "";
+    clear: both;
+}
+
+div.inr_right {
+    float: right;
+}
+div.inr_right::after {
+    content: "";
+    clear: both;
+}
+
+/* spanインデント */
+#msg_container span.text_indent00 {
+    display: inline-block;
+    text-indent: 3.76em;
+
+}
+#msg_container span.text_indent01 {
+    display: inline-block;
+    /*text-indent: 1em;*/
+}
+
+/****************************************************************
+    コンテンツ内部
+****************************************************************/
+/********** コンテンツ部左側設定 **********/
+#msg_container div#main_container {
+    height: auto;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 条件部設定 */
+#msg_container div#tarms_box {
+    width: 100%;
+    /*background-color: #efeeee;
+    border: 1px solid #898989;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;*/
+    padding: 5px;
+}
+
+#msg_container div#tarms_box p {
+    display: inline-block;
+    /*height: 35px;*/
+    line-height: 35px;
+}
+
+
+#msg_container div#tarms_box p:nth-child(1){
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #898989;
+}
+
+#msg_container div#tarms_box p#alreadyRead_inr{
+    width: 100%;
+    border-bottom: 1px solid #898989;
+}
+
+#msg_container div#tarms_box p:nth-child(5) {
+    width: 100%;
+}
+
+/* 各項目タイトル設定 */
+
+#msg_container div#tarms_box p span.expirationDate:after,
+ #msg_container div#tarms_box p span.importance_inr:after{
+    content: "\A" ;
+	white-space: pre ;
+}
+
+#msg_container div#tarms_box p span.form_text_disabled {
+    display: inline-block;
+    /*width: -webkit-calc(50% - 120px);
+    width: calc(100% - 120px);*/
+}
+
+#msg_container div#tarms_box span.validity {
+    display: inline-block;
+}
+
+/* 有効期限 */
+#msg_container div#tarms_box div#radio_detail{
+    border-bottom: 1px solid #898989;
+    padding-bottom: 5px;
+}
+
+/* 有効期限：共通設定 */
+#msg_container div#tarms_box div.radio_inr {
+    display: none;
+    padding-left: 5em;
+}
+
+/* 有効期限：相対日付設定 */
+#msg_container div#tarms_box div#relative_period {
+    width: 100%;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+/* プルダウン設定 */
+#msg_container div#tarms_box div#relative_period select {
+    width: 150px;
+    margin-right: 10px;
+    float: left;
+}
+#msg_container div#tarms_box div#relative_period select::after {
+    content: "";
+    clear: both
+}
+
+/* プルダウン内部設定 */
+#msg_container div#relative_period div.relative_select_inr {
+    margin-left: 5px;
+    float: left;
+}
+#msg_container div#relative_period div.relative_select_inr::after {
+    content: "";
+    clear: both;
+}
+#msg_container div#relative_period div.relative_select_inr:nth-child(2) {
+    display: none;
+}
+
+/* 有効期限：指定日付 */
+#msg_container div#tarms_box div#designation_period input {
+    width: 170px;
+    clear: both;
+}
+
+/* 重要度アイコン設定 */
+#msg_container div#tarms_box span#imp_icon01 {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/important_set64.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: left -2px;
+    padding-left: 32px;
+}
+#msg_container div#tarms_box span#imp_icon02 {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/important_set64.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: left -34px;
+    padding-left: 32px;
+}
+#msg_container div#tarms_box span#imp_icon03 {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/important_set64.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: left -66px;
+    padding-left: 32px;
+}
+
+label#important01, label#important02 {
+    margin-right: 8px;
+}
+
+label#important03 {
+    margin-right: 0;
+}

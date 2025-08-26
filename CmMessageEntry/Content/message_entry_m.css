@@ -1,0 +1,301 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/****************************************************************
+    共通設定（モバイル）
+    頭文字：messageentrymobile
+****************************************************************/
+
+#messageentrymobile {
+    width: 100%;
+}
+
+#msg_container {
+    display: none;
+}
+#msg_footer {
+    display: none;
+}
+
+#main_container {
+    width: 100%;
+}
+
+#header_container {
+    width:100%;
+    margin-bottom:6px;
+}
+
+/* タイトル: 画面幅 */
+#header_container table {
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* タイトル: ボーダー */
+#header_container table tr {
+    border: 1px solid #898989;
+    border-left:none;
+    border-right:none;
+}
+
+#header_container table td span {
+    border: none!important;
+    padding:5px!important;
+    /*padding: 4px !important;*/
+}
+
+/* タイトル: ラベル */
+#header_container table th {
+    width:auto;
+    text-align:right;
+    font-weight:normal;
+    white-space:nowrap;
+    line-height: 1.5;
+}
+
+/* タイトル: 内容 */
+#header_container table td {
+    text-align:left;
+
+}
+
+th, td{
+    padding:3px 5px;
+}
+
+/* 検索アイコン */
+#header_container span.search_icon01 {
+    float: left;
+    height: 20px;
+    background-image: url('/WebCommon/Content/Images/icon_kensaku_blue.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px auto;
+    background-size: 20px auto;
+    background-position: left 0px;
+    padding-left: 30px;
+    cursor: pointer;
+    margin:5px;
+}
+
+#header_container span.search_icon02 {
+    float: left;
+    height: 20px;
+    background-image: url('/WebCommon/Content/Images/icon_kensaku_blue.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px auto;
+    background-size: 20px auto;
+    background-position: left 0px;
+    padding-left: 30px;
+    cursor: pointer;
+    margin:5px;
+}
+/* 核心的内容 */
+#msgSubject{
+    border:none!important;
+    line-height:inherit!important;
+}
+
+/* 重要度：背景 */
+.importance01{
+    background-color:#FFF!important;
+}
+
+.importance02{
+    background-color: #f6c950!important;
+}
+
+.importance03{
+    background-color: #ff7070!important;
+}
+
+/* ビュー */
+#textarea_container {
+    position: relative;
+    margin-left:3px;
+    margin-bottom: 6px;
+}
+
+/* ビュー: テキストエリア */
+div#textarea_container p:nth-child(1) {
+    height: -webkit-calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+/* ビュー: 添付アイコン */
+div#textarea_container p:nth-child(2) {
+    position:absolute;
+    bottom:0;
+
+}
+
+/* 添付アイコン設定 */
+div#textarea_container p span.attached_icon {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_tenpu_Bplus2.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: left -2px;
+    padding-left: 32px;
+    padding-top:4px;
+    cursor:pointer;
+}
+
+/* ビュー: チェックボックス */
+div#textarea_container p:nth-child(3) {
+    float:right;
+    margin-right:2px;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.msgReadFlg{
+    margin:0px!important;
+}
+
+
+/* テキストエリア: メッセージ内容 */
+#msgArea {
+    height:100%;
+    resize:none!important;
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+    border: none!important;
+    outline:none;
+}
+
+
+/* フッター */
+#footer_container {
+    padding:4px;
+    width:100%;
+    overflow: auto;
+    /*Apple製品でスクロール対応するための記載*/
+    -webkit-overflow-scrolling: touch;
+}
+
+div.footer_menu {
+    width:100%;
+    min-width:308px;
+}
+
+/* 条件設定ボタン */
+span#msgCondition_btn {
+    float:left;
+    margin-left:5px;
+    margin-right:10px;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_setting_W.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 36px auto;
+    background-size: 36px auto;
+    background-position: left 2px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+/* 添付ボタン */
+span#msgAttached_btn.attached_icon_none {
+    float:left;
+    margin-right:10px;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_tenpu_W.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 36px auto;
+    background-size: 36px auto;
+    background-position: left 2px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+/* 添付ボタン: 添付あり */
+span#msgAttached_btn.attached_icon {
+    float:left;
+    margin-right:10px;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_tenpu_Wplus2.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 36px auto;
+    background-size: 36px auto;
+    background-position: left 2px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+span#msgCancel_btn {
+    float:left;
+    margin-right:10px;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_clear03.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 36px auto;
+    background-size: 36px auto;
+    background-position: left 2px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+span.bgCircle {
+    background: #00aed9;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: inline-flex;
+    -webkit-border-radius: 50%;
+    border:2px solid #FFF;
+    position: absolute;
+    right: 6px;
+    bottom: 4px;
+    cursor:pointer;
+}
+
+span#msgSend_btn {
+    float: left;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_sousin.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 36px auto;
+    background-size: 36px auto;
+    background-position: left 2px;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 11px;
+    left: 9px;
+}
+
+/*[ 要望対応：メッセージ一時保存対応] 2018-05 松尾 Add*/
+span#msgDraft_btn {
+    float:left;
+    margin-right:10px;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    background-image: url('/WebCommon/Content/Images/icon_save.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 36px auto;
+    background-size: 36px auto;
+    background-position: left 2px;
+    padding-left: 40px;
+    cursor: pointer;
+}

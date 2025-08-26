@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*----------------------------------------------------
+    連絡板 編集画面（PC・タブレット版　上書き用）
+    頭文字(トップID)：boardEntry
+----------------------------------------------------*/
+/* Mobileエリアの非表示 */
+#boardentry_Mobile {
+    display: none;
+}
+
+
+.top_area_01 {
+    border: 1px solid #898989;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #efeeee;
+    padding: 10px;
+}
+.top_area {
+    margin-bottom: 3px;
+}
+
+.top_area_01_left {
+    width: -webkit-calc(100% - 7rem);
+    width: calc(100% - 7rem);
+    float: left;
+}
+.top_area_01_left > div {
+    float: left;
+    width: 50%;
+    min-width: 350px;
+    line-height: 30px;
+    padding-bottom: 3px;
+}
+.top_area_01_left > div > span:first-child {
+    width: 7rem;
+    text-align: right;
+    display: inline-block;
+    float: left;
+}
+.top_area_01_left > div > span:last-child {
+    width: -webkit-calc(100% - 10rem);
+            width: calc(100% - 10rem);
+    max-width: 40rem;
+    display: inline-block;
+    float: left;
+}
+
+.top_area_01_right {
+    width: 7rem;
+    float: right;
+}
+/*[ 診療所版対応：連絡板「重要」項目追加] 2018-11 嶌田 Add.S*/
+.top_area_01_right > span {
+    display: inline-block;
+    margin: 3px 0px 4px 0px;
+}
+.top_area_01_right #importanceFlg {
+    color: #f00;
+}
+/*[ 診療所版対応：連絡板「重要」項目追加] 2018-11 嶌田 Add.E*/
+
+.top_area_02 {
+    line-height: 30px;
+    padding: 6px 0 3px 5px;
+}
+.top_area_02 > span:first-child {
+    width: 3rem;
+    float: left;
+}
+.top_area_02 > span:last-child {
+    width: -webkit-calc(100% - 3rem);
+    width: calc(100% - 3rem);
+    float: right;
+}

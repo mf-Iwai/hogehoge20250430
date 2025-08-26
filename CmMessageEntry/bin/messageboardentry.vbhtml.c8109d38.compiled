@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Views/MessageBoardEntry/MessageBoardEntry.vbhtml" hash="33a722a5" filehash="ffffc5e12c07aa74" flags="110000" assembly="App_Web_qbrebdmq" type="ASP._Page_Views_MessageBoardEntry_MessageBoardEntry_vbhtml">
+    <filedeps>
+        <filedep name="/Views/MessageBoardEntry/MessageBoardEntry.vbhtml" />
+    </filedeps>
+</preserve>

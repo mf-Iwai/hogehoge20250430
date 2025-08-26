@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*----------------------------------------------------
+    連絡板 編集画面（スマホ版　上書き用）
+    頭文字(トップID)：boardEntry
+----------------------------------------------------*/
+/* PCエリアの非表示 */
+#boardentry_PC {
+    display: none;
+}
+
+.boardentry_content {
+    padding: 0;
+}
+
+/* タイトル: 画面幅 */
+.top_area table {
+    width:100%;
+    border-collapse:collapse;
+}
+/* タイトル: ボーダー */
+.top_area table tr {
+    border: 1px solid #898989;
+    border-left:none;
+    border-right:none;
+}
+.top_area table td span {
+    border: none!important;
+    padding:5px!important;
+    /*padding: 4px !important;*/
+}
+/* タイトル: ラベル */
+.top_area table th {
+    width: 12rem;
+    text-align:right;
+    font-weight:normal;
+    white-space:nowrap;
+    line-height: 1.5;
+}
+/* タイトル: 内容 */
+.top_area table td {
+    text-align:left;
+}
+th, td{
+    padding:3px 5px;
+}
+/* 検索アイコン */
+.top_area span.search_icon01 {
+    float: left;
+    height: 20px;
+    background-image: url('/WebCommon/Content/Images/icon_kensaku_blue.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px auto;
+            background-size: 20px auto;
+    background-position: left 0px;
+    padding-left: 30px;
+    cursor: pointer;
+    margin:5px;
+}
+.top_area span.search_icon02 {
+    float: left;
+    height: 20px;
+    background-image: url('/WebCommon/Content/Images/icon_kensaku_blue.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px auto;
+            background-size: 20px auto;
+    background-position: left 0px;
+    padding-left: 30px;
+    cursor: pointer;
+    margin:5px;
+}
+.form_select_01 {
+    border: none;
+}
+
+.btm_area {
+    border: none;
+    border-bottom: 1px solid #898989;
+}
+.form_textarea {
+    height: calc(100% - 35px)!important;
+    height: -webkit-calc(100% - 35px)!important;
+}
+.btm_area > div {
+    width: 100%;
+    padding: 0 10px;
+    text-align: right;
+}
+
+/*[ 診療所版対応：連絡板「重要」項目追加] 2018-11 嶌田 Add.S*/
+/*重要チェックボックス*/
+#boardentry_Mobile #importanceFlg {
+    float: left;
+    margin-bottom: 3px;
+    font-size: 1.6rem;
+    line-height: 25px;
+    color: #f00;
+}
+/*既読チェックボックス*/
+#boardentry_Mobile #readFlg {
+    float: right;
+    margin-right: 0px;
+    font-size: 1.6rem;
+    line-height: 25px;
+}
+/*[ 診療所版対応：連絡板「重要」項目追加] 2018-11 嶌田 Add.E*/
