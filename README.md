@@ -28,4 +28,4 @@
 	<!-- ファイル削除に失敗-->																																	
 	<FileDeleteErrorM>　ファイルの削除に失敗しました。ファイルを開いている場合は閉じて再実行してください　</FileDeleteErrorM>																																	
 </ErrorMessage>																																		
-<img width="686" height="589" alt="image" src="https://github.com/user-attachments/assets/92a8d912-9a88-4ffe-9a56-ee6df102e79f" />
+
