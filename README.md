@@ -1,3 +1,7 @@
+INSERT INTO Mst.EnvironmentSetup
+(ID, SubId, Process, ProcessDetail, Item, EnableFlg, Value1, Value2, Value3, Value4, Value5, Contents1, Contents2, Contents3, Contents4, Contents5, Note, RevisionInfo_AssignCode, RevisionInfo_AssignName, RevisionInfo_DateTime, RevisionInfo_LicenseCode, RevisionInfo_LicenseName, RevisionInfo_PositionCode, RevisionInfo_PositionName, RevisionInfo_TerminalId, RevisionInfo_UserId, RevisionInfo_UserName)
+VALUES('Nt||Settings||ProgressNote||ViewType', 'Nt', 'Settings', 'ProgressNote', 'ViewType', 1, '1', '1', NULL, NULL, NULL, 'Windows("0":規定/"1":江川/"2":札幌HC)', 'スマホ("0":規定/"1":江川/"2":札幌HC)', NULL, NULL, NULL, '表示ビューパターン', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '狩野');
+
 # hogehoge20250430
 
 <Setting>																																		
